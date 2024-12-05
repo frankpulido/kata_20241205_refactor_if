@@ -3,13 +3,12 @@ declare(strict_types=1);
 require "kind.php";
 
 class Loyalty {
-    private int $counter = 0;
+    protected static int $counter = 0;
     protected int $id;
     protected Kind $kind;
 
     public function __construct(Kind $kind) {
-        $this->counter++;
-        $this->id = $this->counter;
+        $this->id = ++self::$counter;
         $this->kind = $kind;
     }
 
