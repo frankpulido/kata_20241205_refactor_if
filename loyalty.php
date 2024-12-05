@@ -16,31 +16,9 @@ class Loyalty {
     public function getLoyaltyId() : int {
         return $this->id;
     }
+    
     public function getKind() : Kind {
         return $this->kind;
     }
-
-    /* class methods
-    public function getBlackFridayDiscount() {
-        //$kind = $this->kind->name;
-        switch ($this->kind) {
-            case Kind::REGULAR :
-                $discount = 0.05;
-                break;
-            case Kind::PREMIUM :
-                $discount = 0.10;
-                break;
-            case Kind::VIP :
-                $discount = 0.15;
-                break;
-            case Kind::OTHER :
-                $discount = 0;
-                break;
-            default :
-                $discount = 0;
-                break;
-        }
-    }
-    */
 }
 ?>

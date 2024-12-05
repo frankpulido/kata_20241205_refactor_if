@@ -18,5 +18,4 @@ foreach ($sales_black_friday as $sale) {
     echo $sale->__toString();
     echo PHP_EOL;
 }
-
 ?>
